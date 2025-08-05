@@ -4,9 +4,11 @@
 La materia es promocionable, las condiciones para ello son: 
 
 Haber aprobado ambos parciales sin recuperar(cualquiera sea la nota, parcial de aprueba con >4) y aprobar el TP Final Arduino(se aprueba con >4)
-En el caso de recuperar alguno de los dos parciales sea Excel o C, para poder promocionar luego la materia realizando el TP Final Arduino la nota de recuperación tiene que ser >6) 
+
+En el caso de recuperar alguno de los dos parciales sea Excel o C, para poder promocionar luego la materia realizando el TP Final Arduino la nota de recuperación tiene que ser >7) 
 
 Si Pepe aprobó parcial de Excel y luego desaprueba C, da el recuperatorio y aprueba con 6. Realizando el TP Final esta en condiciones de promocionar.
+
 Si Jose aprobó parcial de Excel y luego desaprueba C, da el recuperatorio y aprueba con 5. Tiene que dar Final obligatorio.
 
 # Introduccion C
