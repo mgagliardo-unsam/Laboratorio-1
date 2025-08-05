@@ -1,0 +1,283 @@
+#include <stdio.h>
+
+
+int main()
+{
+    //int cadena[]= {23,235,234,123,312,4,64,2,1,21}; // Aquí alojaremos el valor leído
+    int indice= 0;
+    int val_max,indice_max,numero;
+    int val_min,indice_min;
+
+    printf("Ingresa un numero (0 para terminar)");
+    scanf("%d",&numero);
+
+    for (indice = 1; numero != 0 ; indice++)
+    {
+        if(indice==1)
+        {
+            val_max=numero;
+            indice_max=indice;
+            val_min=numero;
+            indice_min=indice;
+
+        }else{
+            if (numero > val_max)
+            {
+                val_max=numero;
+                indice_max=indice;
+            }
+            if (numero < val_min)
+            {
+                val_min=numero;
+                indice_min=indice;
+            }
+        }
+
+       printf("Ingresa un numero (0 para terminar)");
+        scanf("%d",&numero);
+    }
+
+    printf("val_max = %d - indice_max = %d\n",val_max,indice_max);
+    printf("val_min = %d - indice_min = %d\n",val_min,indice_min);
+
+    return 0;
+
+}
+
+
+#include <stdio.h>
+
+
+int main()
+{
+    //int cadena[]= {23,235,234,123,312,4,64,2,1,21}; // Aquí alojaremos el valor leído
+    int indice= 0;
+    int val_max,indice_max,numero;
+    int val_min,indice_min;
+
+    printf("Ingresa un numero (0 para terminar)");
+    scanf("%d",&numero);
+
+    indice==1;
+
+    while(numero != 0){
+
+         if(indice==1)
+        {
+            val_max=numero;
+            indice_max=indice;
+            val_min=numero;
+            indice_min=indice;
+
+        }else{
+            if (numero > val_max)
+            {
+                val_max=numero;
+                indice_max=indice;
+            }
+            if (numero < val_min)
+            {
+                val_min=numero;
+                indice_min=indice;
+            }
+        }
+
+       printf("Ingresa un numero (0 para terminar)");
+        scanf("%d",&numero);
+
+        indice++;
+    }
+
+
+
+
+
+    printf("val_max = %d - indice_max = %d\n",val_max,indice_max);
+    printf("val_min = %d - indice_min = %d\n",val_min,indice_min);
+
+    return 0;
+
+}
+
+
+#include <stdio.h>
+
+
+int main()
+{
+    //int cadena[]= {23,235,234,123,312,4,64,2,1,21}; // Aquí alojaremos el valor leído
+    int indice= 0;
+    int val_max,indice_max,numero;
+    int val_min,indice_min;
+
+    int acumulador=0;
+
+    for (int i=1; i<=7;i++)
+    {
+        printf("------ curso %d ------\n",i);
+        printf("Ingresa un numero (0 para terminar)");
+        scanf("%d",&numero);
+
+        indice==1;
+
+        while(numero != 0){
+
+             if(indice==1)
+            {
+                val_max=numero;
+                indice_max=indice;
+                val_min=numero;
+                indice_min=indice;
+
+            }else{
+                if (numero > val_max)
+                {
+                    val_max=numero;
+                    indice_max=indice;
+                }
+                if (numero < val_min)
+                {
+                    val_min=numero;
+                    indice_min=indice;
+                }
+            }
+                
+            acumulador += numero; // acumulador = acumulador + numero;
+
+           printf("Ingresa un numero (0 para terminar)");
+            scanf("%d",&numero);
+
+            indice++;
+        }
+
+
+        printf("acumulador = %d - indice = %d\n",acumulador,indice);
+        printf("promedio = %d \n",acumulador/indice);
+
+
+        printf("val_max = %d - indice_max = %d\n",val_max,indice_max);
+        printf("val_min = %d - indice_min = %d\n",val_max,indice_max);
+    }
+        return 0;
+
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    int opcionComputadora;
+    char opcionUsuario;
+    srand(time(NULL)); // Inicializar generador de números aleatorios
+    // Obtener elección aleatoria de la computadora (0 - piedra, 1 - papel, 2 - tijera)
+    opcionComputadora = rand() % 3;
+
+    printf("ingrese (piedra ('I'), papel ('A') o tijera ('T'))");
+    fflush(stdin);
+    scanf("%c",&opcionUsuario);
+
+    printf("opcionUsuario ");
+
+    switch(opcionUsuario)
+            {
+                case 'I':
+                    printf("piedra ");
+                break;
+                case 'A':
+                    printf("papel ");
+                break;
+                case 'T':
+                    printf("tijera ");
+                break;
+            }
+printf(" - opcionComputadora ");
+    switch(opcionComputadora)
+            {
+                case 0:
+                    printf("piedra ");
+                break;
+                case 1:
+                    printf("papel ");
+                break;
+                case 2:
+                    printf("tijera ");
+                break;
+            }
+
+
+    switch(opcionUsuario)
+    {
+        case 'I':
+            switch(opcionComputadora)
+            {
+                case 0:
+                    printf("Empate ");
+                break;
+                case 1:
+                    printf("El ganador es la computadora ");
+                break;
+                case 2:
+                    printf("El ganador es el usuario ");
+                break;
+            }
+        break;
+        case 'T':
+            switch(opcionComputadora)
+            {
+                case 2:
+                    printf("Empate ");
+                break;
+                case 0:
+                    printf("El ganador es la computadora ");
+                break;
+                case 1:
+                    printf("El ganador es el usuario ");
+                break;
+            }
+        break;
+        case 'A':
+            switch(opcionComputadora)
+            {
+                case 1:
+                    printf("Empate ");
+                break;
+                case 2:
+                    printf("El ganador es la computadora ");
+                break;
+                case 0:
+                    printf("El ganador es el usuario ");
+                break;
+            }
+        break;
+    }
+
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    char cadena[101];
+
+
+
+    printf("ingrese cadena (max 100) ");
+
+    gets(cadena);
+    printf("la cadena al inicio es = %s \n",cadena);
+    for (int i ; cadena[i]!= 0; i++)
+    {
+        if((cadena[i]>='a' && cadena[i]< 'z') || (cadena[i]>='A' && cadena[i]< 'Z'))
+            cadena[i] = cadena[i] + 1;
+
+        if(cadena[i]== 'z' || cadena[i]== 'Z')
+            cadena[i] = cadena[i]- 25;
+
+
+    }
+     printf("la cadena al final es = %s \n",cadena);
+
+
+}
